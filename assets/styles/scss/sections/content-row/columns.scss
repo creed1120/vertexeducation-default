@@ -1,0 +1,68 @@
+@import "../../_globals/_functions.scss", "../../_globals/_mixins.scss", "../../_globals/_variables.scss";
+
+.col-content {
+    &:not(:only-child):not(:last-child) {
+        @include media($sm) {
+            margin-bottom: 36px;
+        }
+    }
+}
+
+div.one-column {
+    .video-container {
+        height: 30vw;
+        max-height: 424px;
+    }
+}
+
+div.two-column {
+    .video-container {
+        max-width: 500px;
+        max-height: 282px;
+
+        &.two {
+            height: 24vw;
+
+            @include media($sm) {
+                height: 50vw;
+                max-height: unset;
+            }
+        }
+
+        &.two-wide-right {
+            height: 32vw;
+
+            @include media($sm) {
+                height: 50vw;
+                max-height: unset;
+            }
+        }
+
+        &.two-wide-left {
+            height: 14vw;
+            max-height: 200px;
+
+            @include media($sm) {
+                height: 50vw;
+                max-height: unset;
+            }
+        }
+    }
+}
+
+div.three-column {
+    .video-container {
+        height: 14vw;
+        max-height: 200px;
+    }
+}
+
+div.one-column,
+div.three-column {
+    .video-container {
+        @include media($sm) {
+            height: 50vw;
+            max-height: unset;
+        }
+    }
+}

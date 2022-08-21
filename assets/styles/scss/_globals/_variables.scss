@@ -1,0 +1,40 @@
+//***** Legacy Brand *****//
+
+/* Legacy Colors */
+$ltsnavy: #011e41;
+$ltsred: #d12030;
+$ltsgray-light: #f3f4f6;
+$ltsgray-dark: #797979;
+$ltswhite: #ffffff;
+$ltsblue: #254e7f;
+$ltsblue-light: #94b8d0;
+
+/* Legacy Fonts */
+$ltsbodyfontcolor: #5f5f5f;
+$ltsprimaryfontfamily: "Roboto", sans-serif;
+$ltssecondaryfontfamily: "dunbar-tall", sans-serif;
+
+/* Legacy Fonts */
+$overlay_opacity: 0.9;
+
+/* Media Break Points   *
+ * to be used with mixin */
+$tiny: (
+    max-width: 320px,
+);
+$xs: (
+    max-width: 575px,
+);
+$sm: (
+    max-width: 767px,
+);
+$md: (
+    max-width: 991px,
+);
+$lg: (
+    max-width: 1199px,
+);
+
+$xl: (
+    max-width: 1599px,
+);

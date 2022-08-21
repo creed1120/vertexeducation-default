@@ -1,0 +1,12 @@
+@import "../_globals/_functions.scss", "../_globals/_mixins.scss", "../_globals/_variables.scss";
+
+#page-not-found-404 {
+    height: 100vh;
+
+    .container-404 {
+        height: 36vh;
+        max-height: 360px;
+        width: 66%;
+        margin: 0 auto;
+    }
+}

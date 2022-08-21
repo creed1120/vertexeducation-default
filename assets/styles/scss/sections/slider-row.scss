@@ -1,0 +1,153 @@
+@import "../_globals/_functions.scss", "../_globals/_mixins.scss", "../_globals/_variables.scss";
+
+.slider-row {
+    p {
+        color: $ltsgray-dark;
+    }
+
+    &.font-scheme {
+        &-light {
+            p {
+                color: $ltsgray-light;
+            }
+
+            .icon-slider {
+                .slide {
+                    svg {
+                        color: $ltsblue-light;
+                    }
+                }
+            }
+            .slick-arrow {
+                color: $ltswhite;
+
+                &:hover {
+                    color: $ltswhite;
+                }
+            }
+        }
+    }
+
+    .slider {
+        padding: 0 36px;
+
+        @include media($xs) {
+            padding: 0 24px;
+        }
+    }
+    .testimonial-slider {
+        .slider {
+            @include media($xs) {
+                padding: 0 24px;
+            }
+        }
+        .slide {
+            padding: 0 1rem;
+
+            @include media($tiny) {
+                padding: 0;
+            }
+        }
+        .slide-inner {
+            padding: 5rem 1.5rem 1.5rem 1.5rem;
+        }
+
+        .testimonial-image {
+            position: absolute;
+            height: 124px;
+            top: -62px;
+        }
+
+        .by-line {
+            &::before {
+                content: "";
+                position: absolute;
+                top: -18px;
+                left: 50%;
+                width: 50%;
+                height: 3px;
+                background-color: $ltsgray-dark;
+                transform: translateX(-50%);
+                opacity: 0.5;
+            }
+        }
+
+        .slick-track {
+            margin-top: 62px;
+        }
+    }
+
+    .image-slider {
+        &.slider {
+            @include media($xs) {
+                padding: 0 42px;
+            }
+        }
+
+        &-large {
+            .slide {
+                height: 42vw;
+                max-height: 536px;
+                min-height: 208px;
+            }
+        }
+        &-small {
+            .slide {
+                height: 200px;
+                margin: 0 18px;
+
+                @include media($sm) {
+                    height: 124px;
+                    margin: 0 8px;
+                }
+
+                .background {
+                    background-size: contain;
+                }
+            }
+        }
+    }
+
+    .icon-slider {
+        .slide {
+            svg {
+                color: $ltsnavy;
+                height: 80px;
+                width: 200px;
+            }
+        }
+    }
+
+    .slick-arrow {
+        position: absolute;
+        top: 50%;
+        border: none;
+        background: transparent;
+        transform: translateY(-50%);
+        color: $ltsgray-dark;
+        opacity: 0.5;
+        font-size: 64px;
+        z-index: 1;
+
+        @include media($xs) {
+            font-size: 42px;
+            padding: 0;
+        }
+    }
+
+    .slick-next {
+        right: 0;
+
+        @include media($xs) {
+            right: 3%;
+        }
+    }
+
+    .slick-prev {
+        left: 0;
+
+        @include media($xs) {
+            left: 3%;
+        }
+    }
+}

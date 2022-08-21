@@ -1,0 +1,82 @@
+/* Legacy Colors */
+/* Legacy Fonts */
+/* Sizes */
+/* Media Breakpoints */
+/* Media Break Points   *
+ * to be used with mixin */
+.main-cta {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.main-cta h4,
+.main-cta h5 {
+  color: #fff;
+}
+
+footer {
+  background: white;
+}
+
+footer .footer-logo svg {
+  height: 42px;
+}
+
+footer #menu-footer-navigation {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+footer #menu-footer-navigation .menu-item {
+  margin: 0 10px;
+}
+
+footer #menu-footer-navigation .menu-item a {
+  color: #011e41;
+  font-size: small;
+}
+
+footer #menu-footer-navigation .menu-item a:hover {
+  color: #d12030;
+}
+
+footer .copyright {
+  line-height: 1.25;
+}
+
+@media (max-width: 991.98px) {
+  footer span {
+    display: block;
+  }
+}
+
+#footer-btn {
+  opacity: 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  line-height: 60px;
+  text-align: right;
+  margin-bottom: -30px;
+}
+
+@media (max-width: 991.98px) {
+  #footer-btn {
+    margin-bottom: -25px;
+  }
+  #footer-btn .container {
+    padding: 0px;
+    width: 100%;
+  }
+}
+
+#footer-btn.hide {
+  transition: 0.4s ease-in-out;
+  bottom: -100px;
+}

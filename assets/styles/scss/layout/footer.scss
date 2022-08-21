@@ -1,0 +1,41 @@
+@import "../_globals/_functions.scss", "../_globals/_mixins.scss", "../_globals/_variables.scss";
+
+footer {
+	.footer-nav-col {
+		&:not(:last-child) {
+			@include media($xs) {
+				margin-bottom: 1rem;
+			}
+		}
+	}
+
+	.copyright-content {
+		color: $ltsgray-light;
+
+		p {
+			margin: 0;
+			padding: 0;
+		}
+	}
+
+	#footer-menu {
+		margin: 0;
+		padding: 0;
+		display: flex;
+		list-style: none;
+
+		.menu-item {
+			&:not(:last-child) {
+				margin-right: 24px;
+			}
+		}
+
+		a {
+			color: $ltsgray-light;
+
+			&:hover {
+				color: $ltsgray-light;
+			}
+		}
+	}
+}

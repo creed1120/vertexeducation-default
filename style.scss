@@ -1,0 +1,20 @@
+/*
+Theme Name: Vertex Education
+Text Domain: vertexeducation-default
+Theme URI: https://vertexteducation.com
+Author: Thomas Paley
+Author URI: https://vertexteducation.com
+*/
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Suranna&display=swap");
+
+@import "assets/styles/scss/_globals/_functions.scss", "assets/styles/scss/_globals/_mixins.scss",
+    "assets/styles/scss/_globals/_variables.scss";
+@import "assets/styles/scss/components/modal.scss", "assets/styles/scss/components/forms.scss";
+@import "assets/styles/scss/layout/global.scss", "assets/styles/scss/layout/header.scss",
+    "assets/styles/scss/layout/primary-header.scss", "assets/styles/scss/layout/footer.scss";
+@import "assets/styles/scss/templates/default.scss";
+@import "assets/styles/scss/sections/content-row.scss", "assets/styles/scss/sections/content-row/columns.scss",
+    "assets/styles/scss/sections/content-row/accordion-row.scss",
+    "assets/styles/scss/sections/content-row/gallery-row.scss", "assets/styles/scss/sections/slider-row.scss";

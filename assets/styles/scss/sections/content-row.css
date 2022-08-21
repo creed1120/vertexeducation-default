@@ -1,0 +1,50 @@
+/* Legacy Colors */
+/* Legacy Fonts */
+/* Sizes */
+/* Media Breakpoints */
+/* Media Break Points   *
+ * to be used with mixin */
+section.content-row h1,
+section.content-row h2,
+section.content-row h3,
+section.content-row h4,
+section.content-row h5,
+section.content-row h6 {
+  color: #011e41;
+}
+
+section.content-row h1:not(:first-child),
+section.content-row h2:not(:first-child),
+section.content-row h3:not(:first-child),
+section.content-row h4:not(:first-child),
+section.content-row h5:not(:first-child),
+section.content-row h6:not(:first-child) {
+  margin-top: 36px;
+}
+
+section.content-row h1:only-child,
+section.content-row h2:only-child,
+section.content-row h3:only-child,
+section.content-row h4:only-child,
+section.content-row h5:only-child,
+section.content-row h6:only-child {
+  margin: 0;
+}
+
+section.content-row p:last-child {
+  margin-bottom: 0;
+}
+
+section.content-row .sidebar-content h1,
+section.content-row .sidebar-content h2,
+section.content-row .sidebar-content h3,
+section.content-row .sidebar-content h4,
+section.content-row .sidebar-content h5,
+section.content-row .sidebar-content h6 {
+  padding: 8px;
+  margin: 0 0 16px 0;
+  background-color: #d12030;
+  line-height: initial;
+  color: #ffffff;
+  width: 100%;
+}

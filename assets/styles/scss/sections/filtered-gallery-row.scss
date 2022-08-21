@@ -1,0 +1,90 @@
+@import "../_globals/_functions.scss", "../_globals/_mixins.scss", "../_globals/_variables.scss";
+
+// Not currently in use. Not called in styles.scss
+
+.current-category {
+    padding: 0 6px;
+    width: 224px;
+    height: 30px;
+    position: relative;
+    border-bottom: thin solid $ltsgray-dark;
+    display: inline-block;
+    cursor: pointer;
+
+    &:after {
+        content: "\f0d7";
+        font-family: "Font Awesome 5 Pro";
+        font-weight: 600;
+        font-size: 24px;
+        position: absolute;
+        right: 0;
+        bottom: 50%;
+        transform: translateY(50%);
+        transition: 0.2s;
+    }
+
+    &.open:after {
+        content: "\f0d8";
+    }
+}
+
+.gallery-menu {
+    position: relative;
+    margin: 36px auto;
+    width: fit-content;
+}
+
+.galleries-dropdown {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    width: 224px;
+    background-color: $ltsblue;
+}
+
+.gallery-title {
+    padding: 0 8px 8px 8px;
+    margin: 8px 0 0 0;
+    cursor: pointer;
+    color: $ltswhite;
+
+    &:not(:last-child) {
+        border-bottom: thin solid $ltswhite;
+    }
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 36px;
+}
+
+.gallery-image {
+    width: calc((100% / 6) - 24px);
+    margin: 12px;
+
+    a {
+        display: block;
+
+        &:focus {
+            outline: 3px solid transparent !important;
+        }
+    }
+
+    @include media($lg) {
+        margin: 10px;
+        width: calc((100% / 5) - 20px);
+    }
+
+    @include media($sm) {
+        margin: 8px;
+        width: calc((100% / 4) - 16px);
+    }
+
+    @include media($xs) {
+        margin: 6px;
+        width: calc((100% / 2) - 12px);
+    }
+}

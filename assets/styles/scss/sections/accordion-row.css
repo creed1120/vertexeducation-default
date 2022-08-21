@@ -1,0 +1,15 @@
+/* Legacy Colors */
+/* Legacy Fonts */
+/* Sizes */
+/* Media Breakpoints */
+/* Media Break Points   *
+ * to be used with mixin */
+section.accordion .accordion-header:not(:first-child) {
+  margin-top: 3rem;
+}
+
+@media (max-width: 991px) {
+  section.accordion .accordion-header:not(:first-child) {
+    margin-top: 1.5rem;
+  }
+}

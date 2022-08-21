@@ -1,0 +1,13 @@
+@import "../../_globals/_functions.scss", "../../_globals/_mixins.scss", "../../_globals/_variables.scss";
+
+.accordion {
+    .accordion-header {
+        &:not(:first-child) {
+            margin-top: 3rem;
+
+            @include media($md) {
+                margin-top: 1.5rem;
+            }
+        }
+    }
+}

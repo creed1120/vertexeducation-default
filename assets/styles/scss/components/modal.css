@@ -1,0 +1,51 @@
+/* Legacy Colors */
+/* Legacy Fonts */
+/* Sizes */
+/* Media Breakpoints */
+.modal {
+  width: 100%;
+  height: 100%;
+}
+
+.modal .modal-dialog {
+  max-width: none;
+  margin: 0px;
+  height: 100vh !important;
+  border-radius: 0px;
+}
+
+.modal .modal-dialog .modal-content {
+  height: 100vh !important;
+  background-color: transparent;
+  border: none;
+}
+
+#enrollnow {
+  color: #fff;
+}
+
+#enrollnow h2 {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  font-size: 64px;
+  font-weight: 300;
+}
+
+@media (max-width: 575.98px) {
+  #enrollnow h2 {
+    font-size: 40px;
+  }
+}
+
+#enrollnow h3 {
+  font-family: "Suranna", serif;
+  color: #fff;
+  font-size: 40px;
+  letter-spacing: 0.06rem;
+}
+
+@media (max-width: 575.98px) {
+  #enrollnow h3 {
+    font-size: 24px;
+  }
+}

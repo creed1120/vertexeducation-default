@@ -1,0 +1,395 @@
+/* Legacy Colors */
+/* Legacy Fonts */
+/* Sizes */
+/* Media Breakpoints */
+/* Media Break Points   *
+ * to be used with mixin */
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 2;
+  margin-bottom: 20px;
+  color: #5f5f5f;
+  font-weight: 400;
+}
+
+@media (max-width: 575px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "dunbar-tall", sans-serif;
+  font-weight: 700 !important;
+  line-height: initial;
+  color: #797979;
+  margin-bottom: 16px;
+}
+
+h1,
+.h1 {
+  font-size: 48px;
+}
+
+@media (max-width: 991px) {
+  h1,
+.h1 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 767px) {
+  h1,
+.h1 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 575px) {
+  h1,
+.h1 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  h1,
+.h1 {
+    font-size: 18px;
+  }
+}
+
+h2,
+.h2 {
+  color: #011e41;
+  font-size: 36px;
+}
+
+@media (max-width: 991px) {
+  h2,
+.h2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 767px) {
+  h2,
+.h2 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 575px) {
+  h2,
+.h2 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 320px) {
+  h2,
+.h2 {
+    font-size: 16px;
+  }
+}
+
+h3,
+.h3 {
+  color: #d12030;
+  font-size: 28px;
+}
+
+@media (max-width: 991px) {
+  h3,
+.h3 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  h3,
+.h3 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  h3,
+.h3 {
+    font-size: 16px;
+  }
+}
+
+h4,
+.h4 {
+  font-size: 24px;
+}
+
+@media (max-width: 991px) {
+  h4,
+.h4 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  h4,
+.h4 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 575px) {
+  h4,
+.h4 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 320px) {
+  h4,
+.h4 {
+    font-size: 14px;
+  }
+}
+
+h5,
+.h5 {
+  font-size: 20px;
+}
+
+@media (max-width: 991px) {
+  h5,
+.h5 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  h5,
+.h5 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 575px) {
+  h5,
+.h5 {
+    font-size: 14px;
+  }
+}
+
+h6,
+.h6 {
+  font-size: 18px;
+}
+
+@media (max-width: 991px) {
+  h6,
+.h6 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  h6,
+.h6 {
+    font-size: 14px;
+  }
+}
+
+section.container, section.container-fluid {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 991.98px) {
+  section.container, section.container-fluid {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+.box {
+  padding: 25px;
+}
+
+.box.bg-gray {
+  background: #f3f4f6;
+}
+
+.shadow {
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+a {
+  color: #011e41;
+}
+
+a:hover {
+  color: #d12030;
+}
+
+.card-link {
+  cursor: pointer;
+}
+
+.show-content {
+  opacity: 0;
+}
+
+.fade {
+  transition: opacity 0.3s linear;
+}
+
+.animate-bottom {
+  position: relative;
+  animation: animatebottom 0.3s;
+}
+
+@keyframes animatebottom {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+.page-content-wrap {
+  padding-top: 100px;
+}
+
+@media (max-width: 991px) {
+  .page-content-wrap {
+    padding-top: 60px;
+  }
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  margin-left: -50%;
+  z-index: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.ltsnavy-gradient {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#011e41+0,011e41+33,143961+66,f3f4f6+100&1+0,1+33,0.5+66,0.1+100 */
+  background: -moz-linear-gradient(left, #011e41 0%, #011e41 33%, rgba(20, 57, 97, 0.5) 66%, rgba(243, 244, 246, 0.1) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #011e41 0%, #011e41 33%, rgba(20, 57, 97, 0.5) 66%, rgba(243, 244, 246, 0.1) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #011e41 0%, #011e41 33%, rgba(20, 57, 97, 0.5) 66%, rgba(243, 244, 246, 0.1) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#011e41', endColorstr='#1af3f4f6',GradientType=1 );
+  /* IE6-9 */
+}
+
+.white-gradient {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,1+34,0.75+50,0.25+66,0+100 */
+  background: -moz-linear-gradient(left, white 0%, white 34%, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0.25) 66%, rgba(255, 255, 255, 0) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, white 0%, white 34%, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0.25) 66%, rgba(255, 255, 255, 0) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, white 0%, white 34%, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0.25) 66%, rgba(255, 255, 255, 0) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 );
+  /* IE6-9 */
+}
+
+.section-blue {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background: url("assets/images/background-blue.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 18px;
+  margin: 0px;
+}
+
+@media (max-width: 991.98px) {
+  .section-blue {
+    background-size: cover;
+  }
+}
+
+.section-blue .close {
+  color: #fff;
+  text-shadow: none;
+  font-size: 100px;
+  font-weight: 400;
+  opacity: 1;
+}
+
+.section-blue h2 {
+  color: #fff;
+}
+
+.section-blue a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.section-blue a:hover {
+  color: #d12030;
+}
+
+.section-white {
+  width: 100%;
+  height: 100%;
+  color: #5f5f5f;
+  background: #fff;
+  background-size: inherit;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.section-white .close {
+  color: #011e41;
+  text-shadow: none;
+  font-size: 100px;
+  font-weight: 400;
+  opacity: 1;
+}
+
+.mission-holder {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.color-navy {
+  color: #011e41;
+}
+
+.color-red {
+  color: #d12030;
+}
+
+.color-dark-gray {
+  color: #797979;
+}
+
+.color-blue-accent {
+  color: #254e7f;
+}

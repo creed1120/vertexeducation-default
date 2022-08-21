@@ -1,0 +1,56 @@
+@mixin media($breakpoint) {
+    @media #{$breakpoint} {
+        @content;
+    }
+}
+
+@mixin all-titles {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @content;
+    }
+}
+
+@mixin scrollbar_gray {
+    &::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: $ltsgray-dark;
+    }
+    &::-webkit-scrollbar-track-piece {
+        background: linear-gradient(
+            to right,
+            $ltsgray-light,
+            $ltsgray-light 40%,
+            $ltsgray-light 50%,
+            $ltsgray-light 60%
+        );
+    }
+}
+
+@mixin scrollbar_blue {
+    &::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: $ltsblue-light;
+    }
+    &::-webkit-scrollbar-track-piece {
+        background: linear-gradient(to right, $ltsnavy, $ltsnavy 40%, $ltsnavy 50%, $ltsnavy 60%);
+    }
+}
+
+@function tint($color, $percentage) {
+    @return mix(white, $color, $percentage);
+}
+
+@function shade($color, $percentage) {
+    @return mix(black, $color, $percentage);
+}
