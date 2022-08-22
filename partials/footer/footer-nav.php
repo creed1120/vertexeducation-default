@@ -14,6 +14,22 @@
     <section id="footer-nav" class="py-4 py-sm-5 background-color-dark-gray">
 
         <div class="container">
+
+        <p>
+        <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+            Link with href
+        </a>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            Button with data-target
+        </button>
+        </p>
+        <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+            Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+        </div>
+        </div>
+
+
             <div class="row">
                 <?php foreach ($footer_navigation as $column) : ?>
 
