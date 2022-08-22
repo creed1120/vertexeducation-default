@@ -137,6 +137,7 @@ function bootstrap_styles_for_gravityforms_fields($content, $field, $value, $lea
     return $content;
 }
 add_filter("gform_submit_button", "form_submit_button", 10, 2);
+
 function form_submit_button($button, $form)
 {
     return "<button class='button btn btn-cta' id='gform_submit_button_{$form["id"]}'><span>Submit</span></button>";
